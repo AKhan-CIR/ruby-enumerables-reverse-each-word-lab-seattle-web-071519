@@ -1,9 +1,6 @@
-def reverse_each_word(sentence)
-  rev_sen = []
-   sentence.split(//).reverse_each do |word|
-     rev_sen << word
-   end
-   p reverse_each_word.join
- end
-   
+def reverse_words(sentence)
+   new_arr = [] 
+   a = sentence.split(" ")
+   new_arr << a.collect(&:reverse).join(" ")
+end
    
